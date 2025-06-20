@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Download Gateway</title>
   <style>
@@ -18,8 +17,6 @@
       height: 100vh;
       overflow: hidden;
       text-align: center;
-      position: relative;
-      z-index: 1;
     }
 
     .loader {
@@ -38,7 +35,7 @@
 
     .container {
       padding: 20px;
-      z-index: 1;
+      display: none;
     }
 
     .download-btn {
@@ -67,17 +64,204 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="loader"></div>
-    <h2>Preparing Your Download...</h2>
-    <p>Complete a quick task to unlock the download.</p>
+  <div class="loader" id="loader"></div>
 
-    <!-- Locker will overlay on top of this content -->
-    <button class="download-btn">Download Now</button>
+  <div class="container" id="content">
+    <h2>Download Ready</h2>
+    <p>Your content has been unlocked!</p>
+    <a href="<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Gateway</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .loader {
+      border: 6px solid #444;
+      border-top: 6px solid #00ffcc;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .container {
+      padding: 20px;
+      display: none;
+    }
+
+    .download-btn {
+      background: #00ffcc;
+      color: #000;
+      padding: 14px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #00ddaa;
+    }
+
+    @media (max-width: 600px) {
+      .download-btn {
+        width: 90%;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+
+  <div class="container" id="content">
+    <h2>Download Ready</h2>
+    <p>Your content has been unlocked!</p>
+    <a href="<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Gateway</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .loader {
+      border: 6px solid #444;
+      border-top: 6px solid #00ffcc;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .container {
+      padding: 20px;
+      display: none;
+    }
+
+    .download-btn {
+      background: #00ffcc;
+      color: #000;
+      padding: 14px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #00ddaa;
+    }
+
+    @media (max-width: 600px) {
+      .download-btn {
+        width: 90%;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+
+  <div class="container" id="content">
+    <h2>Download Ready</h2>
+    <p>Your content has been unlocked!</p>
+    <a href="https://mega.nz/folder/IZ5hzQwY#429-PATa2JLQicdujuRi1Q" class="download-btn">Download Now</a>
   </div>
 
   <!-- CPAGrip Locker Script -->
-  <script type="text/javascript" src="https://filestrue.com/script_include.php?id=1818719"></script>
+  <script type="text/javascript" src="https://singingfiles.com/script_include.php?id=1818719"></script>
+
+  <!-- Fallback: show content after unlock -->
+  <script>
+    // Delay to simulate unlock logic fallback
+    setTimeout(() => {
+      // Hide loader
+      document.getElementById('loader').style.display = 'none';
+      // Show content container
+      document.getElementById('content').style.display = 'block';
+    }, 10000); // 10 seconds fallback if CPAGrip doesn't handle it
+  </script>
 </body>
 </html>
+" class="download-btn">Download Now</a>
+  </div>
 
+  <!-- CPAGrip Locker Script -->
+  <script type="text/javascript" src="https://singingfiles.com/script_include.php?id=1818719"></script>
+
+  <!-- Fallback: show content after unlock -->
+  <script>
+    // Delay to simulate unlock logic fallback
+    setTimeout(() => {
+      // Hide loader
+      document.getElementById('loader').style.display = 'none';
+      // Show content container
+      document.getElementById('content').style.display = 'block';
+    }, 10000); // 10 seconds fallback if CPAGrip doesn't handle it
+  </script>
+</body>
+</html>
+" class="download-btn">Download Now</a>
+  </div>
+
+  <!-- CPAGrip Locker Script -->
+  <script type="text/javascript" src="https://singingfiles.com/script_include.php?id=1818719"></script>
+
+  <!-- Fallback: show content after unlock -->
+  <script>
+    // Delay to simulate unlock logic fallback
+    setTimeout(() => {
+      // Hide loader
+      document.getElementById('loader').style.display = 'none';
+      // Show content container
+      document.getElementById('content').style.display = 'block';
+    }, 10000); // 10 seconds fallback if CPAGrip doesn't handle it
+  </script>
+</body>
+</html>
